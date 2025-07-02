@@ -1,0 +1,1 @@
+A twitter bot that posts hallucinations about masculinity using GPT-2 trained on articles from men's magazines.
