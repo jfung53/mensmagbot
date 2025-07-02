@@ -19,4 +19,4 @@ scrapy shell 'url.com'
 touch script.py
 
 4. crawl
-scrapy crawl yourspider -o output.json
+scrapy crawl yourspider -o output.json -s CLOSESPIDER_PAGECOUNT=8000
