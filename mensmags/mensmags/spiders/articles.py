@@ -5,7 +5,7 @@ class gq_spider(scrapy.Spider):
     start_urls = [
         "https://www.gq.com/wellness",
         "https://www.gq.com/style",
-        "https://www.gq.com/gq-recommends",
+        "https://www.gq.com/gq-recommends", #shopping
         "https://www.gq.com/culture",
         "https://www.gq.com/grooming",
     ]
@@ -20,12 +20,11 @@ class gq_spider(scrapy.Spider):
 
     def parse_article(self, response):
         yield {
-            'topic': response.css('a.RubricLink-gRWSOU span::text').get(),
-            'title': response.css('h1::text').get(),
-            'author': response.css('span.BylineName-kwmrLn a::text').get(),
             'date': response.css('time::text').get(),
-            'datetime': response.css('time::attr(datetime)').get(),
-            'bodytext': response.css(a_sel.css('article.article p::text').getall()),
-            'h2text': response.css(('article.article strong::text').getall()),
+            'topic': response.css('a.RubricLink-gRWSOU span::text').get(),
+            'author': response.css('span.BylineName-kwmrLn a::text').get(),
+            'title': response.css('h1::text').get(),
+            'bodytext': response.css('article.article p::text').getall(),
+            'h2text': response.css('article.article strong::text').getall(),
         }
 
