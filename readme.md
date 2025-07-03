@@ -1,7 +1,8 @@
 # Men's Mag Bot
 
 A twitter bot that posts hallucinations about masculinity using GPT-2 trained on articles from men's magazines.
-This is a school project and for educational use only. 
+
+This project is for educational use only. 
 
 ## Proposal
 
