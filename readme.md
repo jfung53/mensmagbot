@@ -13,21 +13,23 @@ I'm interested in exploring how masculinity is defined in popular culture.  I pl
 1. conda install scrapy
 
 2. create project folder
-scrapy startproject <yourproject>
+scrapy startproject <projectname>
 
 3. get selectors
-scrapy shell 'url.com'
+scrapy shell 'url.com' or use notebook
 
 4. create script.py file in /spider folder
 touch script.py
 
 5. crawl
-scrapy crawl yourspider -o output.json -s CLOSESPIDER_PAGECOUNT=8000
+scrapy crawl spidername -o output.json -s CLOSESPIDER_PAGECOUNT=8000
 
-6. clean up, analyze data
+6. clean up, analyze data if needed
 
 7. train language model (huggingface trl)
 
 8. generate text (randomize sentence starters)
 
-9. create image with drawbot to post on instagram or twitter
+9. create image with [drawbot](https://github.com/typemytype/drawbot)
+
+10. post on instagram with [instabot](https://github.com/ohld/igbot/blob/master/examples/autopost/README.md), meta api, or twitter
