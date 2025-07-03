@@ -28,3 +28,35 @@ class gq_spider(scrapy.Spider):
             'h2text': response.css('article.article strong::text').getall(),
         }
 
+""" class menshealth_spider(scrapy.Spider):
+    name = "menshealth"
+    start_urls = [
+        "https://www.menshealth.com/health/",
+        "https://www.menshealth.com/mental-health/", #1pg
+        "https://www.menshealth.com/style/",
+        "https://www.menshealth.com/technology-gear/",
+        "https://www.menshealth.com/entertainment/", #1pg
+        "https://www.menshealth.com/trending-news/",
+        "https://www.menshealth.com/grooming/",
+        "https://www.menshealth.com/cool-dad-hq/", #1pg
+    ]
+
+    def parse(self, response):
+        article_page_links = response.css
+        yield from response.follow_all(article_page_links, self.parse_article)
+
+        next_page = response.css
+        if next_page is not None:
+            yield response.follow(next_page, self.parse)
+
+    def parse_article(self, response):
+        yield {
+            'date': 
+            'topic': 
+            'author': 
+            'title': 
+            'bodytext': 
+            'h2text': 
+        }
+
+ """
