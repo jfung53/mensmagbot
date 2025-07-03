@@ -30,6 +30,12 @@ scrapy crawl spidername -o output.json -s CLOSESPIDER_PAGECOUNT=8000
 
 8. generate text (randomize sentence starters)
 
+9. create virtual environment
+python -m venv .venv
+source .venv/bin/activate
+pip install python-dotenv instabot git+https://github.com/typemytype/drawbot
+pip freeze > requirements.txt
+
 9. create image with [drawbot](https://github.com/typemytype/drawbot)
 
 10. post on instagram with [instabot](https://github.com/ohld/igbot/blob/master/examples/autopost/README.md), meta api, or twitter
