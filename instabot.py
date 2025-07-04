@@ -11,6 +11,7 @@ PASSWORD = os.getenv("PASSWORD")
 
 
 # from https://medium.com/@rajdattkokate/automate-instagram-posts-with-python-a-step-by-step-guide-4b055f356b31
+# and https://github.com/Jacob-Mellichamp/Instagram-bot/blob/main/src/instaPublisher.py
 
 def upload_image(username, password, image_path, caption):
     bot = Bot()

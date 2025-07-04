@@ -1,43 +1,43 @@
-Men are
-Men can be
-Modern men are
-A man is
-Masculinity is
-Masculinity can be
-It's masculine to
-A manly man
-Men should
-A man should
-Every man should
-Men should never
-Men need
-A man needs
-Every man needs
-Every dude
-Nice guys are
-Any guy
-Any man
-All men
-Most men
-Real men
-A real man
-Some men
-Fellas, 
-Gentlemen,
-Males are
-Male friendship is
-The male
-Manhood is
-Man up and 
-Being a man means
-Being a father means
-Being a dad means
-Every dad should
-The best dads
-Great dads
-Fatherhood
-A family man
-Single guys
-Hot guys
-The hottest trend in men's fashion 
-This menwear trend
+sentence_starters = [
+    "Men are",
+    "Men can be",
+    "Modern men are",
+    "A man is",
+    "Masculinity is",
+    "Masculinity can be",
+    "It's masculine to",
+    "A manly man",
+    "Men should",
+    "A man should",
+    "Every man should",
+    "Men should never",
+    "Men need",
+    "A man needs",
+    "Every man needs",
+    "Every dude",
+    "Nice guys are",
+    "Any guy would",
+    "Any man would",
+    "All men",
+    "Most men",
+    "Real men",
+    "A real man",
+    "Some men",
+    "Males are",
+    "Male friendship is",
+    "The male",
+    "Manhood is",
+    "It's time to man up and",
+    "Being a man means",
+    "Being a father means",
+    "Being a dad means",
+    "Being a gentleman means",
+    "Every dad should",
+    "The best dads are",
+    "Great dads are",
+    "Fatherhood is",
+    "A family man is",
+    "Single guys are",
+    "Hot guys are",
+    "The hottest trend in men's fashion is",
+]

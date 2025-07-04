@@ -24,7 +24,7 @@ touch script.py
 5. crawl
 scrapy crawl spidername -o output.json -s CLOSESPIDER_PAGECOUNT=8000
 
-6. clean up, analyze data if needed
+6. clean up, analyze data (e.g. gq_analysis.ipynb)
 
 7. train language model (huggingface trl)
 
@@ -33,7 +33,7 @@ scrapy crawl spidername -o output.json -s CLOSESPIDER_PAGECOUNT=8000
 9. create virtual environment
 python -m venv .venv
 source .venv/bin/activate
-pip install python-dotenv instabot git+https://github.com/typemytype/drawbot
+pip install python-dotenv instabot ipykernel git+https://github.com/typemytype/drawbot
 pip freeze > requirements.txt
 
 9. create image with [drawbot](https://github.com/typemytype/drawbot)
