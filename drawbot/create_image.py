@@ -94,7 +94,7 @@ with open(csv_path, newline='', encoding='utf-8') as csvfile:
     entries = [row[0] for row in reader if row]
 
 text_obj = random.choice(entries)
-print(f'random string: {text_obj}')
+print(f'Random text chosen: {text_obj}')
 
 
 # -----------
@@ -119,12 +119,14 @@ target_height = int(float(imgPIL.height) * w_percent)
 
 # resize image to be smaller
 img_resized = imgPIL.resize((output_x, target_height), PILImage.LANCZOS)
+print("Image resized")
 
 # crop to center
 top = (target_height - output_y) // 2
 bottom = top + output_y
 # crop arguments: left, top, right, bottom
 img_cropped = img_resized.crop((0, top, output_x, bottom))
+print("Image cropped")
 
 # display(img_cropped)
 
@@ -136,13 +138,14 @@ img_cropped.save(temp_path)
 img_blurred = img_cropped.filter(PILImageFilter.GaussianBlur(radius=10))
 temp_path_blurred = 'temp_img_blurred.png'
 img_blurred.save(temp_path_blurred)
-
+print("Saved temporary files")
 
 
 # --------------------
 # drawing instructions
 # --------------------
 
+print("Drawing started")
 with db.drawing():    
     # define canvas size
     db.newPage(output_x, output_y)
@@ -153,6 +156,7 @@ with db.drawing():
     db.rect(0, 0, db.width(), db.height())
 
     # ASCII art effect
+    print('Generating ASCII pixels')
     pixel_size = 16
     db.font('CourierNewPS-BoldMT')
     #db.font('CourierNewPSMT')
@@ -167,6 +171,7 @@ with db.drawing():
                 db.text("#", (x, y))
 
     # add blurred image
+    print("Blurring the photo")
     blurred_img_obj = db.ImageObject()
     with blurred_img_obj:
         db.newPage(output_x, output_y)
@@ -174,6 +179,7 @@ with db.drawing():
     db.image(blurred_img_obj, (0, 0), 0.5)
 
     # add text on top
+    print("Adding styled text")
     # test strings of different lengths
     #text_obj = 'Masculinity is not simply the physical and emotional dominance of a man it is also the physical and emotional vulnerability and dignity of a woman.'
     #text_obj = 'A manly man'
@@ -208,13 +214,12 @@ with db.drawing():
     # white
     db.fill(255, 255, 255)
     db.textBox(text_obj, (bx, by, bw, bh))
-    
-    db.saveImage(output_png, imageResolution=300)
-    display(Image(output_png))
 
+    print(f"Saving to {output_png}")
+    db.saveImage(output_png, imageResolution=300)
 
 # clean up
 os.remove(temp_path)
 os.remove(temp_path_blurred)
 
-print("Done")
+print(f"--- Done ---")
