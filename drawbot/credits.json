@@ -143,5 +143,12 @@
     "photographer_profile": "https://unsplash.com/@dogukanbenli",
     "unsplash_link": "https://unsplash.com/photos/man-standing-on-rock-near-waterfalls-during-daytime-isBgbbmVFmk",
     "filename": "random_unsplash_image.jpg"
+  },
+  {
+    "photo_id": "R5BW2qgV5I8",
+    "photographer": "Guilherme Stecanella",
+    "photographer_profile": "https://unsplash.com/@guilhermestecanella",
+    "unsplash_link": "https://unsplash.com/photos/man-in-white-shirt-sitting-on-green-grass-field-during-sunset-R5BW2qgV5I8",
+    "filename": "random_unsplash_image.jpg"
   }
 ]

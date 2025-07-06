@@ -52,7 +52,7 @@ if response.status_code == 200:
     if image_response.status_code == 200:
         with open(filename, 'wb') as f:
             f.write(image_response.content)
-        print(f"Image downloaded: {photo_id} and saved as {filename}")
+        print(f"Image {photo_id} downloaded and saved as {filename}")
 
         metadata = {
             "photo_id": photo_id,
