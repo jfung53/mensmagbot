@@ -6,3 +6,6 @@ __pycache__/
 
 proposal.md
 drawbot/test.png
+drawbot/random_unsplash_image.jpg
+drawbot/temp_img_blurred.png
+drawbot/temp_img.png
