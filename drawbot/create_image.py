@@ -44,14 +44,15 @@ if response.status_code == 200:
     photographer_profile = data['user']['links']['html']
     unsplash_link = data['links']['html']
     photo_id = data['id']
-    filename = f"{photo_id}.jpg"
+    #filename = f"{photo_id}.jpg"
+    filename = 'random_unsplash_image.jpg'
     
     # download image
     image_response = requests.get(image_url)
     if image_response.status_code == 200:
         with open(filename, 'wb') as f:
             f.write(image_response.content)
-        print(f"Image downloaded: {filename}")
+        print(f"Image downloaded: {photo_id} and saved as {filename}")
 
         metadata = {
             "photo_id": photo_id,
@@ -213,4 +214,7 @@ with db.drawing():
 
 
 # clean up
-os.remove(temp_path) 
+os.remove(temp_path)
+os.remove(temp_path_blurred)
+
+print("Done")
