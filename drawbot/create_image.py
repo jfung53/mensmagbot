@@ -108,7 +108,7 @@ img_source = 'random_unsplash_image.jpg'
 # square              1080 x 1080
 # 4:5 (vertical)      1080 x 1350
 # 1.91:1 (landscape)  1080 x 566
-output_png = "test.png"
+output_png = "output.png"
 output_x, output_y = 1080, 1080
 
 # calculate height needed to maintain aspect ratio
