@@ -5,8 +5,8 @@ import json
 import random
 import csv
 import drawBot as db
-from IPython.display import Image, display, IFrame
 from PIL import Image as PILImage, ImageFilter as PILImageFilter
+# from IPython.display import Image, display, IFrame # for testing only
 
 load_dotenv()
 ACCESS_KEY = os.getenv("ACCESS_KEY")
