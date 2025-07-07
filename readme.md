@@ -18,7 +18,6 @@ This tutorial goes through how to:
 
 1. On the [main repository page](https://github.com/jfung53/mensmagbot) click on the green Code button to "Download ZIP"
 2. We won't need the 'mensmags' folder, just ignore it.
-3. 
 
 ## 2. :earth_asia: Configure a Virtual Environment
 
