@@ -130,7 +130,6 @@ importlib_metadata @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000
 incremental @ file:///croot/incremental_1743512672142/work
 inflection @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/inflection_1728612757490/work
 iniconfig @ file:///home/linux1/recipes/ci/iniconfig_1610983019677/work
-instabot==0.117.0
 intake @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/intake_1731727145783/work
 intervaltree @ file:///Users/ktietz/demo/mc3/conda-bld/intervaltree_1630511889664/work
 ipykernel @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_6757k8pgf8/croot/ipykernel_1737662465787/work

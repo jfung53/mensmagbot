@@ -14,12 +14,12 @@ This tutorial goes through how to:
 - grab a random line of text, and
 - generate a stylized image to post on social media
 
-## 1. :file_folder: Download Folders
+## 1. Download Folders
 
 1. On the [main repository page](https://github.com/jfung53/mensmagbot) click on the green Code button to "Download ZIP"
 2. We won't need the 'mensmags' folder, just ignore it.
 
-## 2. :earth_asia: Configure a Virtual Environment
+## 2. Configure a Virtual Environment
 
 I did this in the VS Code terminal.  
 
@@ -30,12 +30,12 @@ This is not expert advice.
 ```console
     python -m venv .venv
     source .venv/bin/activate
-    pip install python-dotenv pillow git+https://github.com/typemytype/drawbot
+    pip install python-dotenv instabot pillow git+https://github.com/typemytype/drawbot
     pip freeze > requirements.txt
 ```
 4. Alternatively, I think you can just `pip install` the packages in your base python but maybe that's not the best idea in the world.  
 
-## 3. :camera: Set Up the Unsplash API
+## 3. Set Up the Unsplash API
 
 1. Create (or log into) an account on [Unsplash](https://unsplash.com)
 2. Go to the [Unsplash Developers](https://unsplash.com/developers) page
@@ -45,7 +45,7 @@ This is not expert advice.
 6. Scroll down to the **Keys** section
 7. We'll need the **ACCESS KEY**
 
-## 4. :snake: Configure the Script
+## 4. Configure the Script
 
 1. Open VS Code
 2. File - New Window - and open the downloaded `/mensmagsbot/` folder
@@ -71,7 +71,7 @@ params = {
 ```
 6. We should now be able to run the script, but first we'll configure it some more.
 
-## 5. :fireworks: Configure the image parameters
+## 5. Configure the image parameters
 
 First, we'll configure the search query to get a photo from Unsplash.  
 We're using the `random photo endpoint` from the API that can be narrowed with a few parameters.  
@@ -85,7 +85,7 @@ SEARCH_QUERY = 'man in nature'
 2. Back in `params` you can also choose the orientation of the photo. For this script, `portrait` works best, so just leave it as is.
 3. The script is ready to run. 
 
-## 6. :crystal_ball: Run the script to create an image and find out what it means to be a man
+## 6. Run the script to create an image and find out what it means to be a man
 
 Open the VS Code terminal to run the script.
 ```console
@@ -96,11 +96,11 @@ That's it! `output.png` should appear in the `/drawbot/` folder.
 
 **Note**: Every time you run the script, `output.png` gets overwritten.  
 
-## 7. :fireworks: Customize the drawing further
+## 7. Customize the drawing further
 
 Here are some ways you can play around with the image and text.
 
-### :point_right: Enter your own text
+### Enter your own text
 
 Scroll to the `get generated text` section of the script.  
 Look for the `text_obj` variable.  
@@ -112,7 +112,7 @@ print(f'Random text chosen: {text_obj}')
 # text_obj = 'A manly man'
 ```
 
-### :point_right: Change the background colour
+### Change the background colour
 
 Scroll to the `drawing instructions` section.  
 The background is a rectangle that is set to the width and height of the canvas.  
@@ -125,7 +125,7 @@ db.fill(0, 0, 0)
 db.rect(0, 0, db.width(), db.height())
 ```
 
-### :point_right: Change the font of the quote
+### Change the font of the quote
 
 To change the typeface you'll need to add this chunk of code somewhere.  
 It uses DrawBot's `installedFonts()` function to print a list of all the fonts installed on your computer.  Maybe you have a very masculine font that would work well here.  
@@ -144,7 +144,7 @@ Paste your font name here in the `db.font()` function.
     db.tracking(-4) # distance between characters
 ```
 
-### :point_right: Change the ASCII art style pixelated characters
+### Change the ASCII art style pixelated characters
 
 Modify the `ASCII art effect` which is found in the same `drawing instructions` section under the background colour.  
 
@@ -169,7 +169,7 @@ Change that character here in `db.text()`:
 ```
 I know that there is some way to vary the `db.text()` character according to colour but I haven't figured it out yet.  
 
-### :point_right: Change the colour of the chromatic aberration effect
+### Change the colour of the chromatic aberration effect
 
 Change the colours of the teal and red colour fringing around the white text.  
 I've included the code to use a `random()` colour, or you can set your own RGB values with an optional alpha.  
@@ -197,7 +197,7 @@ chrom = 4
     db.textBox(text_obj, (bx, by, bw, bh))
 ```
 
-## 8. :ghost: What's Next
+## 8. What's Next
 
 I still need to get the instagram automation working.  
 
