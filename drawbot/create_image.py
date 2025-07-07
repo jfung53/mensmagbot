@@ -1,17 +1,18 @@
 import requests
 import os
+# skip dotenv if working locally
 from dotenv import load_dotenv
 import json
 import random
 import csv
 import drawBot as db
 from PIL import Image as PILImage, ImageFilter as PILImageFilter
-# from IPython.display import Image, display, IFrame # for testing only
+# for testing only
+# from IPython.display import Image, display, IFrame 
 
+# skip for tutorial
 load_dotenv()
 ACCESS_KEY = os.getenv("ACCESS_KEY")
-
-
 
 # ------------------------------------
 # get a random image from unsplash api
@@ -93,8 +94,13 @@ with open(csv_path, newline='', encoding='utf-8') as csvfile:
     next(reader)
     entries = [row[0] for row in reader if row]
 
+# this is where the generated text is grabbed from
 text_obj = random.choice(entries)
 print(f'Random text chosen: {text_obj}')
+
+# manually enter strings of different lengths
+#text_obj = 'Masculinity is not simply the physical and emotional dominance of a man it is also the physical and emotional vulnerability and dignity of a woman.'
+#text_obj = 'A manly man'
 
 
 # -----------
@@ -180,9 +186,6 @@ with db.drawing():
 
     # add text on top
     print("Adding styled text")
-    # test strings of different lengths
-    #text_obj = 'Masculinity is not simply the physical and emotional dominance of a man it is also the physical and emotional vulnerability and dignity of a woman.'
-    #text_obj = 'A manly man'
 
     bx, by, bw, bh = 64, 64, 960, 960
     db.fill(0, 0, 0, 0)
