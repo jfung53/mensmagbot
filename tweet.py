@@ -192,8 +192,9 @@ def tweet_a_man(tweepy_client):
         # ASCII art effect
         print('Generating ASCII pixels')
         pixel_size = 16
-        db.font('CourierNewPS-BoldMT')
+        #db.font('CourierNewPS-BoldMT')
         #db.font('CourierNewPSMT')
+        db.font('drawbot/fonts/CourierPrime/CourierPrime-Bold.ttf')
         db.fontSize(pixel_size)
 
         for x in range(0, output_x, 12):
