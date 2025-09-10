@@ -1,0 +1,16 @@
+[
+  {
+    "photo_id": "Mjq_QtBZ-X4",
+    "photographer": "Clay Banks",
+    "photographer_profile": "https://unsplash.com/@claybanks",
+    "unsplash_link": "https://unsplash.com/photos/a-man-standing-on-top-of-a-cliff-near-the-ocean-Mjq_QtBZ-X4",
+    "filename": "random_unsplash_image.jpg"
+  },
+  {
+    "photo_id": "tylto1g8Wbg",
+    "photographer": "Thierry Lemaitre",
+    "photographer_profile": "https://unsplash.com/@tlemaitre",
+    "unsplash_link": "https://unsplash.com/photos/a-man-with-a-backpack-standing-on-a-hill-tylto1g8Wbg",
+    "filename": "random_unsplash_image.jpg"
+  }
+]

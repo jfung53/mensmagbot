@@ -30,7 +30,7 @@ This is not expert advice.
 ```console
     python -m venv .venv
     source .venv/bin/activate
-    pip install python-dotenv instabot pillow git+https://github.com/typemytype/drawbot
+    pip install python-dotenv pillow git+https://github.com/typemytype/drawbot
     pip freeze > requirements.txt
 ```
 4. Alternatively, I think you can just `pip install` the packages in your base python but maybe that's not the best idea in the world.  

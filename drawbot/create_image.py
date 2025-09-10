@@ -46,6 +46,7 @@ if response.status_code == 200:
     unsplash_link = data['links']['html']
     photo_id = data['id']
     #filename = f"{photo_id}.jpg"
+
     filename = 'random_unsplash_image.jpg'
     
     # download image
@@ -85,7 +86,7 @@ else:
 # ------------------
 # get generated text
 # ------------------
-csv_path = "unique_text_to_post.csv"
+csv_path = "drawbot/unique_text_to_post.csv"
 
 # read into a list
 with open(csv_path, newline='', encoding='utf-8') as csvfile:
@@ -191,10 +192,11 @@ with db.drawing():
     db.fill(0, 0, 0, 0)
     db.rect(bx, by, bw, bh)
 
-    db.font('AkzidenzGroteskPro-Bold')
+    #db.font('AkzidenzGroteskPro-Bold')
+    db.font('drawbot/fonts/Bowlby_One_SC/BowlbyOneSC-Regular.ttf')
     db.fontSize(104)
     db.lineHeight(104)
-    db.tracking(-4)
+    db.tracking(-2)
 
     chrom = 4
 
@@ -224,5 +226,7 @@ with db.drawing():
 # clean up
 os.remove(temp_path)
 os.remove(temp_path_blurred)
+os.remove(filename)
+#os.remove(output_png)
 
 print(f"--- Done ---")
