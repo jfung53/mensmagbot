@@ -1,4 +1,4 @@
-# Men's Mag Bot
+# Masculinity Bot
 
 A bot that posts about masculinity using GPT-2 trained on articles from men's magazines.  
 
