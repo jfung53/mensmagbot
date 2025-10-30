@@ -16,8 +16,7 @@ This tutorial goes through how to:
 
 ## 1. :file_folder: Download Folders
 
-1. On the [main repository page](https://github.com/jfung53/mensmagbot) click on the green Code button to "Download ZIP"
-2. We won't need the 'mensmags' folder, just ignore it.
+1. Clone the repo.
 
 ## 2. :earth_asia: Configure a Virtual Environment
 
@@ -33,7 +32,6 @@ This is not expert advice.
     pip install python-dotenv pillow git+https://github.com/typemytype/drawbot
     pip freeze > requirements.txt
 ```
-4. Alternatively, I think you can just `pip install` the packages in your base python but maybe that's not the best idea in the world.  
 
 ## 3. :camera: Set Up the Unsplash API
 
@@ -77,7 +75,7 @@ First, we'll configure the search query to get a photo from Unsplash.
 We're using the `random photo endpoint` from the API that can be narrowed with a few parameters.  
 
 1. Above `params` find the `SEARCH_QUERY` variable.  
-Replace my keywords, `'man in nature'`, with your own
+Replace my keywords, `'man in nature'`, with your own if you like.
 ```python
 # define keyword search query
 SEARCH_QUERY = 'man in nature'
