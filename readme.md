@@ -1,6 +1,6 @@
 # Men's Mag Bot
 
-A bot that posts hallucinations about masculinity using GPT-2 trained on articles from men's magazines.  
+A bot that posts about masculinity using GPT-2 trained on articles from men's magazines.  
 
 Created for a school project. 
 
