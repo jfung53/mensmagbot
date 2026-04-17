@@ -2,7 +2,7 @@
 
 A bot that posts about masculinity using GPT-2 trained on articles from men's magazines.  
 
-Created for a school project. 
+See results [here](https://www.jocelynfung.com/data/masculinity-bot/).
 
 # In-class Tutorial
 

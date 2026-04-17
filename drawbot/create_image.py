@@ -86,7 +86,7 @@ else:
 # ------------------
 # get generated text
 # ------------------
-csv_path = "drawbot/unique_text_to_post.csv"
+csv_path = "unique_text_to_post.csv"
 
 # read into a list
 with open(csv_path, newline='', encoding='utf-8') as csvfile:
@@ -158,8 +158,8 @@ with db.drawing():
     db.newPage(output_x, output_y)
 
     # set background colour
-    db.fill(0, 0, 0)
-    #db.fill(db.random(), db.random(), db.random())
+    #db.fill(0, 0, 0)
+    db.fill(db.random(), db.random(), db.random())
     db.rect(0, 0, db.width(), db.height())
 
     # ASCII art effect
@@ -194,10 +194,10 @@ with db.drawing():
     db.rect(bx, by, bw, bh)
 
     #db.font('AkzidenzGroteskPro-Bold')
-    db.font('drawbot/fonts/Bowlby_One_SC/BowlbyOneSC-Regular.ttf')
+    db.font('fonts/Advercase/Advercase-Bold.otf')
     db.fontSize(104)
-    db.lineHeight(104)
-    db.tracking(-2)
+    db.lineHeight(128)
+    db.tracking(0)
 
     chrom = 4
 
