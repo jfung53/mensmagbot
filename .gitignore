@@ -4,6 +4,11 @@
 __pycache__/
 .DS_Store
 
+output/
+
+drawbot/fonts/
+drawbot/credits.json
+
 proposal.md
 packages.txt
 drawbot/test.png
