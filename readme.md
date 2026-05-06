@@ -2,7 +2,9 @@
 
 A bot that posts about masculinity using GPT-2 trained on articles from men's magazines.  
 
-See results [here](https://www.jocelynfung.com/data/masculinity-bot/).
+<img src="images/beard.png" alt="every man should have a beard" width="600">
+
+See more images [here](https://www.jocelynfung.com/data/masculinity-bot/).
 
 # In-class Tutorial
 
